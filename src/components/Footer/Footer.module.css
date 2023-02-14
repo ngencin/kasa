@@ -1,0 +1,20 @@
+.footer_bg {
+  background-color: black;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 66px;
+}
+
+.logo_footer {
+  margin-top: 50px;
+}
+
+.text_footer {
+  color: white;
+  font-size: 14px;
+  padding-top: 25px;
+}
+
+/* Media queries */

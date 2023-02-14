@@ -1,0 +1,47 @@
+.header_bg {
+  display: flex;
+  align-items: center;
+  padding: 40px 100px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  gap: 57px;
+}
+
+.nav_home,
+.nav_about {
+  text-decoration-line: none;
+  font-size: 24px;
+  color: #ff6060;
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+  .header_bg {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  .header_logo {
+    width: 145px;
+    height: 47px;
+  }
+  .nav_home,
+  .nav_about {
+    text-decoration-line: none;
+    font-size: 12px;
+    color: #ff6060;
+    text-transform: uppercase;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+  }
+}

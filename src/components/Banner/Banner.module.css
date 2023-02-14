@@ -1,0 +1,45 @@
+.banner_bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: #000;
+  mix-blend-mode: darken;
+}
+
+.banner_img {
+  border-radius: 25px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.banner_text {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0em;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+  .banner_bg {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .banner_img {
+    height: 100%;
+    border-radius: 10px;
+  }
+  .banner_text {
+    font-size: 24px;
+    padding: 31px 115px 32px 16px;
+    line-height: 100%;
+  }
+}

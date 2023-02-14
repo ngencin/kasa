@@ -1,0 +1,9 @@
+.main {
+  padding: 40px 100px;
+}
+
+.about_bg {
+  display: flex;
+  flex-direction: column;
+  padding: 31px 85px;
+}

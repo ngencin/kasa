@@ -1,0 +1,40 @@
+.card_column {
+  width: 30.3%;
+  border-radius: 10px;
+  background: #ff6060;
+  border-radius: 10px;
+  text-decoration-line: none;
+}
+
+.card_img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.card_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  width: 70%;
+  padding: 20px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+  .card_column {
+    width: 100%;
+  }
+}
