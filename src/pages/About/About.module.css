@@ -7,3 +7,26 @@
   flex-direction: column;
   padding: 31px 85px;
 }
+
+/* Media queries mobiles */
+@media only screen and (max-width: 480px) {
+  .main {
+    padding: 15px;
+  }
+  .about_bg {
+    padding: 0px;
+  }
+}
+
+/* Media queries iPads, tablettes */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    padding: 15px;
+  }
+}

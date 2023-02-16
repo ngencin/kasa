@@ -13,7 +13,7 @@
   gap: 40px;
 }
 
-/* Media queries */
+/* Media queries mobiles */
 @media only screen and (max-width: 480px) {
   .main {
     padding: 15px;
@@ -25,5 +25,31 @@
     padding: 0px;
     gap: 15px;
     margin-top: 22px;
+  }
+}
+
+/* Media queries iPads, tablettes */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    padding: 15px;
+  }
+  .cards_bg {
+    gap: 22px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    padding: 15px;
+  }
+  .cards_bg {
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .cards_bg {
+    gap: 33px;
   }
 }

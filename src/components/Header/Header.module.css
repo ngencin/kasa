@@ -13,12 +13,15 @@
 
 .nav_home,
 .nav_about {
-  text-decoration-line: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
   font-size: 24px;
+  line-height: 142.6%;
   color: #ff6060;
 }
 
-/* Media queries */
+/* Media queries mobiles */
 @media only screen and (max-width: 480px) {
   .header_bg {
     display: flex;
@@ -43,5 +46,18 @@
     align-items: center;
     margin-left: auto;
     gap: 10px;
+  }
+}
+
+/* Media queries iPads, tablettes */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header_bg {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header_bg {
+    padding: 15px;
   }
 }

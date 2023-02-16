@@ -26,7 +26,7 @@
   letter-spacing: 0em;
 }
 
-/* Media queries */
+/* Media queries mobiles */
 
 @media only screen and (max-width: 480px) {
   .banner_bg {
@@ -40,6 +40,21 @@
   .banner_text {
     font-size: 24px;
     padding: 31px 115px 32px 16px;
+    line-height: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner_bg {
+    height: 130px;
+    border-radius: 10px;
+  }
+  .banner_img {
+    height: 100%;
+    border-radius: 10px;
+  }
+  .banner_text {
+    font-size: 24px;
     line-height: 100%;
   }
 }

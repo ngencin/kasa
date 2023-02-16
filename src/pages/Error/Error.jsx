@@ -9,11 +9,11 @@ function Error() {
     <div className="content">
       <Header />
       <section className={ErrorCSS.error_bg}>
-        <div className={ErrorCSS.error404}>404</div>
+        <div className={ErrorCSS.error_404}>404</div>
         <p className={ErrorCSS.error_text}>
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <Link className={ErrorCSS.link_backhome} to="/">
+        <Link className={ErrorCSS.error_link} to="/">
           Retourner sur la page d’accueil
         </Link>
       </section>

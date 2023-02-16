@@ -29,3 +29,20 @@
   color: #ff6060;
   padding: 17px 15px;
 }
+
+/* Media queries mobiles */
+@media only screen and (max-width: 480px) {
+  .collapse_column {
+    padding: 19px 0 19px 0;
+  }
+  .collapse_title {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 142.6%;
+  }
+  .collapse_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142.6%;
+  }
+}

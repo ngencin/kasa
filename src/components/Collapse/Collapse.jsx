@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import upArrow from '../../assets/fleche.png'
+import downArrow from '../../assets/arrowndown.png'
+import upArrow from '../../assets/arrowup.svg'
 import CollapseCSS from './Collapse.module.css'
 
 function Collapse({ h1, p }) {
-  const [arrowUp, setArrow] = useState('') // affiche la variable et modifie la variable
+  const [arrowUp, setArrow] = useState(false) // affiche la variable et modifie la variable
 
   return arrowUp ? (
     <div className={CollapseCSS.collapse_column}>
@@ -13,7 +14,7 @@ function Collapse({ h1, p }) {
 
         <img
           className={CollapseCSS.collapse_img}
-          src={upArrow}
+          src={downArrow}
           alt="fleche"
           onClick={() => setArrow(false)}
         ></img>
