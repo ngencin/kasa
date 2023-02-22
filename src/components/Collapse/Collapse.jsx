@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import downArrow from '../../assets/arrowndown.png'
-import upArrow from '../../assets/arrowup.svg'
+import downArrow from '../../assets/arrownDown.png'
+import upArrow from '../../assets/arrowUp.svg'
 import CollapseCSS from './Collapse.module.css'
 
 function Collapse({ h1, p }) {

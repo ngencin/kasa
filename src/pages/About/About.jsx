@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Collapse from '../../components/Collapse/Collapse'
 import Banner from '../../components/Banner/Banner'
-import imgAbout from '../../assets/imgabout.png'
+import imgAbout from '../../assets/imgAbout.png'
 import AboutCSS from './About.module.css'
 
 function About() {

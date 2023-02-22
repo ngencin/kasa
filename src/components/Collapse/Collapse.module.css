@@ -1,5 +1,6 @@
 .collapse_column {
-  padding: 15px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .collapse_title {
   display: flex;
