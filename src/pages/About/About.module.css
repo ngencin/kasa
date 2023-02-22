@@ -1,32 +1,22 @@
 .main {
-  padding: 40px 100px;
+  padding: 15px;
 }
-
 .about_bg {
+  margin-top: 19px;
   display: flex;
   flex-direction: column;
-  padding: 31px 85px;
+  gap: 20px;
 }
 
-/* Media queries mobiles */
-@media only screen and (max-width: 480px) {
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media screen and (min-width: 980px) {
   .main {
-    padding: 15px;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
   }
   .about_bg {
-    padding: 0px;
-  }
-}
-
-/* Media queries iPads, tablettes */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .main {
-    padding: 15px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
-    padding: 15px;
+    width: 1024px;
+    align-self: center;
   }
 }

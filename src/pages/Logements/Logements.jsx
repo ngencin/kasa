@@ -7,15 +7,16 @@ import Locations from '../../Data/locations.json'
 import SlideShow from '../../components/SlideShow/SlideShow'
 import Collapse from '../../components/Collapse/Collapse'
 import Rating from '../../components/Ratings/Rating'
+import Error from '../Error/Error'
 
 function Logement() {
   const params = useParams()
   const logId = Locations.find((logement) => logement.id === params.id)
+  const paramsError = logId
+  if (!paramsError) return <Error />
+
   const slides = logId.pictures
   const rating = logId.rating
-
-  console.log(params)
-  console.log(logId)
 
   return (
     <div className={LogementCSS.content}>
@@ -28,30 +29,33 @@ function Logement() {
               slides={slides}
             ></SlideShow>
           </div>
-          <div className={LogementCSS.home}>
-            <div className={LogementCSS.home_title}> {logId.title} </div>
-            <div className={LogementCSS.home_host_bg}>
-              <div className={LogementCSS.home_host_name}>
-                {logId.host.name}
+          <div className={LogementCSS.home_header}>
+            <div className={LogementCSS.home_title_location_tags_bg}>
+              <div className={LogementCSS.home_title}> {logId.title} </div>
+              <div className={LogementCSS.home_location}>
+                {' '}
+                {logId.location}{' '}
               </div>
-              <img
-                className={LogementCSS.home_host_img}
-                src={logId.host.picture}
-                alt="host"
-              ></img>
+              <div className={LogementCSS.home_tags_bg}>
+                {logId.tags.map((tag, index) => (
+                  <div className={LogementCSS.home_tags} key={index}>
+                    {tag}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className={LogementCSS.home_location}> {logId.location} </div>
-          <div className={LogementCSS.home_tags_ratings}>
-            <div className={LogementCSS.home_tags_bg}>
-              {logId.tags.map((tag, index) => (
-                <div className={LogementCSS.home_tags} key={index}>
-                  {tag}
+            <div className={LogementCSS.home_host_ratings}>
+              <div className={LogementCSS.home_host_bg}>
+                <div className={LogementCSS.home_host_name}>
+                  {logId.host.name}
                 </div>
-              ))}
-            </div>
-            <div className={LogementCSS.home_ratings_bg}>
-              <div className={LogementCSS.home_ratings}>
+                <img
+                  className={LogementCSS.home_host_img}
+                  src={logId.host.picture}
+                  alt="host"
+                ></img>
+              </div>
+              <div className={LogementCSS.home_ratings_bg}>
                 <Rating
                   className={LogementCSS.home_rating}
                   rating={rating}

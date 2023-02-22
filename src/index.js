@@ -7,6 +7,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Error from './pages/Error/Error'
 import Logements from './pages/Logements/Logements'
+import './normalize.css'
 import './index.css'
 
 // Affiche un élément React au sein du nœud DOM

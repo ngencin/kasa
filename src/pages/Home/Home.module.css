@@ -1,4 +1,4 @@
-.main {
+/* .main {
   padding: 40px 100px;
 }
 .cards_bg {
@@ -11,45 +11,43 @@
   padding: 56px 50px;
   justify-content: space-around;
   gap: 40px;
+} */
+
+.main {
+  padding: 15px;
 }
 
-/* Media queries mobiles */
-@media only screen and (max-width: 480px) {
+.cards_bg {
+  display: flex;
+  background: none;
+  margin-top: 22px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*Styles spécifiques pour les écrans de taille moyenne type tablette*/
+@media screen and (min-width: 780px) and (max-width: 979px) {
+  .cards_bg {
+    background: #f7f7f7;
+    border-radius: 25px;
+    padding: 50px;
+  }
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media screen and (min-width: 980px) {
   .main {
-    padding: 15px;
-  }
-
-  .cards_bg {
-    background: none;
-    flex-direction: column;
-    padding: 0px;
-    gap: 15px;
-    margin-top: 22px;
-  }
-}
-
-/* Media queries iPads, tablettes */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .main {
-    padding: 15px;
+    padding: 40px 100px;
   }
   .cards_bg {
-    gap: 22px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .main {
-    padding: 15px;
-  }
-  .cards_bg {
-    gap: 25px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .cards_bg {
-    gap: 33px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+    border-radius: 25px;
+    margin-top: 43px;
+    padding: 56px 50px;
+    justify-content: space-around;
+    gap: 40px;
   }
 }

@@ -5,6 +5,7 @@ import React from 'react'
 // import aboutBannerImg from '../../assets/imgabout.png'
 import BannerCSS from './Banner.module.css'
 
+//Composant qui permet d'afficher et de changer l'image banner en fonction de la page où l'user se trouve
 function Banner({ img, title }) {
   return (
     <div className={BannerCSS.banner_bg}>

@@ -3,6 +3,7 @@ import downArrow from '../../assets/arrownDown.png'
 import upArrow from '../../assets/arrowUp.svg'
 import CollapseCSS from './Collapse.module.css'
 
+// Composant qui permet de cacher ou d'afficher des informations
 function Collapse({ h1, p }) {
   const [arrowUp, setArrow] = useState(false) // affiche la variable et modifie la variable
 

@@ -3,6 +3,7 @@ import Logo from '../../assets/logoHeader.svg'
 import { NavLink } from 'react-router-dom'
 import headerCSS from './Header.module.css'
 
+//Composant qui affiche le header, et la barre de navigation
 function Header() {
   return (
     <header>
