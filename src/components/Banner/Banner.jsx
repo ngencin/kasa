@@ -1,8 +1,4 @@
 import React from 'react'
-// import CssBanner from './Banner.module.css'
-// import { useLocation } from 'react-router-dom'
-// import homeBannerImg from '../../assets/imghome.png'
-// import aboutBannerImg from '../../assets/imgabout.png'
 import BannerCSS from './Banner.module.css'
 
 //Composant qui permet d'afficher et de changer l'image banner en fonction de la page où l'user se trouve
