@@ -6,7 +6,7 @@ import LogementCSS from './Logement.module.css'
 import Locations from '../../Data/locations.json'
 import SlideShow from '../../components/SlideShow/SlideShow'
 import Collapse from '../../components/Collapse/Collapse'
-import Rating from '../../components/Ratings/Rating'
+import Rating from '../../components/Rating/Rating'
 import Error from '../Error/Error'
 
 function Logement() {
@@ -32,10 +32,7 @@ function Logement() {
           <div className={LogementCSS.home_header}>
             <div className={LogementCSS.home_title_location_tags_bg}>
               <div className={LogementCSS.home_title}> {logId.title} </div>
-              <div className={LogementCSS.home_location}>
-                {' '}
-                {logId.location}{' '}
-              </div>
+              <div className={LogementCSS.home_location}>{logId.location}</div>
               <div className={LogementCSS.home_tags_bg}>
                 {logId.tags.map((tag, index) => (
                   <div className={LogementCSS.home_tags} key={index}>

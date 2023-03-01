@@ -26,6 +26,7 @@
   gap: 10px;
 }
 
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
 @media screen and (min-width: 980px) {
   .header_bg {
     padding: 40px 100px;

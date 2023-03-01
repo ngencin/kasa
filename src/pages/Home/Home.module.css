@@ -1,18 +1,6 @@
-/* .main {
-  padding: 40px 100px;
+.content {
+  padding: 0px;
 }
-.cards_bg {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background: #f7f7f7;
-  border-radius: 25px;
-  margin-top: 43px;
-  padding: 56px 50px;
-  justify-content: space-around;
-  gap: 40px;
-} */
-
 .main {
   padding: 15px;
 }

@@ -6,7 +6,7 @@ import ErrorCSS from './Error.module.css'
 
 function Error() {
   return (
-    <div className="content">
+    <div className={ErrorCSS.content}>
       <Header />
       <div className={ErrorCSS.main}>
         <section className={ErrorCSS.error_bg}>
